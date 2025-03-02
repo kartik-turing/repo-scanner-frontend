@@ -59,14 +59,12 @@ const ProductCard = () => {
       title: 'Total Files Scanned',
       value: UpperCardJSON.total_files_scanned?.value || 0,
       icon: 'tabler-smart-home',
-      desc: UpperCardJSON.total_files_scanned?.value || 0,
       change: UpperCardJSON.total_files_scanned?.change ? parseFloat(UpperCardJSON.total_files_scanned.change) : null
     },
     {
       title: 'Files Scanned Per Minute',
       value: UpperCardJSON.files_scanned_per_minute?.value || 0,
       icon: 'tabler-device-laptop',
-      desc: UpperCardJSON.files_scanned_per_minute?.value || 0,
       change: UpperCardJSON.files_scanned_per_minute?.change
         ? parseFloat(UpperCardJSON.files_scanned_per_minute.change)
         : null
@@ -81,7 +79,6 @@ const ProductCard = () => {
       title: 'Estimated Time Remaining',
       value: UpperCardJSON.estimated_time_remaining?.value || 0,
       icon: 'tabler-wallet',
-      desc: UpperCardJSON.estimated_time_remaining?.value || 0,
       change: UpperCardJSON.estimated_time_remaining?.change
         ? parseFloat(UpperCardJSON.estimated_time_remaining.change)
         : null
@@ -121,6 +118,7 @@ const ProductCard = () => {
                     />
                   </div>
                 ) : null}
+                {item.desc && <Typography>{item.desc}</Typography>}
               </div>
               {isBelowMdScreen && !isSmallScreen && index < mappedData.length - 2 && (
                 <Divider

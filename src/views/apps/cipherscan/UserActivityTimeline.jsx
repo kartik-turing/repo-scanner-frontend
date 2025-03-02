@@ -16,10 +16,9 @@ import MuiTimeline from '@mui/lab/Timeline'
 
 import CurrentTimeline from './CurrentTimeline'
 import { useMqtt } from '@/hooks/useMqtt'
-import { Box } from '@mui/material'
+import PerfectScrollbar from 'react-perfect-scrollbar'
 
 // Styled Timeline component
-
 const Timeline = styled(MuiTimeline)({
   paddingLeft: 0,
   paddingRight: 0,
@@ -40,11 +39,10 @@ const UserActivityTimeLine = () => {
       <CardHeader title='' />
       <CardContent>
         {/* Scrollable Container */}
-        <Box
-          sx={{
+        <PerfectScrollbar
+          style={{
             maxHeight: timelineMessage?.length > 2 ? '715px' : 'auto',
-            overflowY: timelineMessage?.length > 2 ? 'auto' : 'visible',
-            paddingRight: '8px' // Optional: Prevents scrollbar from overlapping content
+            paddingRight: '8px' // Prevents scrollbar from overlapping content
           }}
         >
           <Timeline>
@@ -81,7 +79,7 @@ const UserActivityTimeLine = () => {
                 </TimelineItem>
               ))}
           </Timeline>
-        </Box>
+        </PerfectScrollbar>
       </CardContent>
     </Card>
   )
