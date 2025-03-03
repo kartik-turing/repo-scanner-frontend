@@ -19,19 +19,19 @@ jobs:
         with:
           node-version: 18
 
-      # - name: Create .env file
-      #   run: |
-      #     echo "NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL }}" >> .env
-      #     echo "NEXT_PUBLIC_SOME_KEY=${{ secrets.NEXT_PUBLIC_SOME_KEY }}" >> .env
+      - name: Create .env file
+        run: |
+          echo "NEXTAUTH_URL=${{ secrets.NEXTAUTH_URL }}" >> .env
+          echo "NEXTAUTH_SECRET=${{ secrets.NEXTAUTH_SECRET }}" >> .env
 
       - name: Install dependencies
         run: npm install
 
       - name: Build Next.js app
         run: npm run build
-        # env:
-        #   NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
-        #   NEXT_PUBLIC_SOME_KEY: ${{ secrets.NEXT_PUBLIC_SOME_KEY }}
+        env:
+          NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
+          NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
