@@ -118,6 +118,7 @@ const Login = ({ mode }) => {
   const handleClickShowPassword = () => setIsPasswordShown(show => !show)
 
   const onSubmit = async data => {
+    console.log("Signin==>", process.env.NEXTAUTH_URL)
     const res = await signIn('credentials', {
       email: data.email,
       password: data.password,
