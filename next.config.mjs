@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   basePath: process.env.BASEPATH,
+  env: {
+    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+  },
   redirects: async () => {
     return [
       {
