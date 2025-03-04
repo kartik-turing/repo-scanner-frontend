@@ -66,14 +66,15 @@ const UserActivityTimeLine = () => {
                       <Typography className='mbe-2'>
                         {item.description} in line {item.lineNumber}
                       </Typography>
-                      <Typography variant='caption' color='text.disabled'>
-                        <div className='flex items-center gap-2.5 is-fit bg-actionHover rounded plb-[5px] pli-2.5'>
-                          <Typography className='font-medium'>low </Typography>
-                        </div>
-                      </Typography>
                     </div>
                     <Typography className='mbe-2'>{item.codeSnippet}</Typography>
                     <div style={{ marginTop: '10px' }}></div>
+                    <div
+                      style={{ marginBottom: '10px' }}
+                      className='flex items-center gap-2.5 is-fit bg-actionHover rounded plb-[5px] pli-2.5'
+                    >
+                      <Typography className='font-medium'>low </Typography>
+                    </div>
                     <CurrentTimeline title={item.recommendedFix.title} body={item.recommendedFix.body} />
                   </TimelineContent>
                 </TimelineItem>
