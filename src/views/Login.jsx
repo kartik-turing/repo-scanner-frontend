@@ -124,7 +124,8 @@ const Login = ({ mode }) => {
         password: data.password,
         redirect: false
       })
-
+      console.log('url is', process.env.NEXT_PUBLIC_API_URL)
+      cosnole.log('url is 2', process.env.API_URL)
       console.log('result is', res)
 
       if (res && res.ok && !res.error) {
