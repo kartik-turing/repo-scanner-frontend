@@ -118,24 +118,33 @@ const Login = ({ mode }) => {
   const handleClickShowPassword = () => setIsPasswordShown(show => !show)
 
   const onSubmit = async data => {
-    console.log("Signin==>", process.env.NEXTAUTH_URL)
-    const res = await signIn('credentials', {
-      email: data.email,
-      password: data.password,
-      redirect: false
-    })
+    try {
+      const res = await signIn('credentials', {
+        email: data.email,
+        password: data.password,
+        redirect: false
+      })
 
-    if (res && res.ok && res.error === null) {
-      // Vars
-      const redirectURL = searchParams.get('redirectTo') ?? '/'
+      console.log('result is', res)
 
-      router.replace(getLocalizedUrl(redirectURL, locale))
-    } else {
-      if (res?.error) {
-        const error = JSON.parse(res.error)
-
-        setErrorState(error)
+      if (res && res.ok && !res.error) {
+        // Vars
+        const redirectURL = searchParams.get('redirectTo') ?? '/'
+        router.replace(getLocalizedUrl(redirectURL, locale))
+      } else {
+        if (res?.error) {
+          let error
+          try {
+            error = JSON.parse(res.error) // Only parse if it's valid JSON
+          } catch (parseError) {
+            error = { message: res.error } // Handle non-JSON errors
+          }
+          setErrorState(error)
+        }
       }
+    } catch (error) {
+      console.error('Login request failed:', error)
+      setErrorState({ message: 'Something went wrong. Please try again.' })
     }
   }
 
