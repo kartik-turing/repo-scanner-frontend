@@ -37,6 +37,7 @@ export const authOptions = {
           console.log('url is', process.env.NEXT_PUBLIC_API_URL)
           const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/login`, {
             method: 'POST',
+            credentials: 'include',
             headers: {
               'Content-Type': 'application/json'
             },
