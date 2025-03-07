@@ -73,7 +73,7 @@ const UserActivityTimeLine = () => {
                       style={{ marginBottom: '10px' }}
                       className='flex items-center gap-2.5 is-fit bg-actionHover rounded plb-[5px] pli-2.5'
                     >
-                      <Typography className='font-medium'>low </Typography>
+                      <Typography className='font-medium'> {item.issueType} </Typography>
                     </div>
                     <CurrentTimeline title={item.recommendedFix.title} body={item.recommendedFix.body} />
                   </TimelineContent>
