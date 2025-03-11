@@ -72,7 +72,7 @@ const VerticalMenu = ({ dictionary, scrollMenu }) => {
         {/* <MenuItem href={`/${locale}/dashboards/ecommerce`}>{dictionary['navigation'].eCommerce}</MenuItem> */}
         <MenuItem href={`/${locale}/dashboards/academy`}>{dictionary['navigation'].academy}</MenuItem>
         <MenuItem href={`/${locale}/apps/academy/my-courses`}>{dictionary['navigation'].qgsdk}</MenuItem>
-        <MenuItem href={`/${locale}/apps/academy/course-details`}>{dictionary['navigation'].qgSDKDetails}</MenuItem>
+        {/* <MenuItem href={`/${locale}/apps/academy/course-details`}>{dictionary['navigation'].qgSDKDetails}</MenuItem> */}
 
         {/* <MenuItem href={`/${locale}/dashboards/logistics`}>{dictionary['navigation'].logistics}</MenuItem> */}
         {/* </SubMenu> */}
@@ -98,7 +98,7 @@ const VerticalMenu = ({ dictionary, scrollMenu }) => {
         {/* <MenuItem href={`/${locale}/apps/ecommerce/dashboard`}>{dictionary['navigation'].dashboard}</MenuItem> */}
         {/* <SubMenu label={dictionary['navigation'].products}> */}
         <MenuItem href={`/${locale}/apps/ecommerce/products/list`}>{dictionary['navigation'].qgkms}</MenuItem>
-        <MenuItem href={`/${locale}/apps/ecommerce/products/add`}>{dictionary['navigation'].addkey}</MenuItem>
+        {/* <MenuItem href={`/${locale}/apps/ecommerce/products/add`}>{dictionary['navigation'].addkey}</MenuItem> */}
         <MenuItem href={`/${locale}/apps/roles`}>{dictionary['navigation'].qgVault}</MenuItem>
         <MenuItem href={`/${locale}/apps/cipherscan`}>{dictionary['navigation'].cipherscan}</MenuItem>
 
