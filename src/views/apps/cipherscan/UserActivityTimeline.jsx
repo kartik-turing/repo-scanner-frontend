@@ -17,6 +17,7 @@ import MuiTimeline from '@mui/lab/Timeline'
 import CurrentTimeline from './CurrentTimeline'
 import { useMqtt } from '@/hooks/useMqtt'
 import PerfectScrollbar from 'react-perfect-scrollbar'
+import { Chip } from '@mui/material'
 
 // Styled Timeline component
 const Timeline = styled(MuiTimeline)({
@@ -29,6 +30,12 @@ const Timeline = styled(MuiTimeline)({
     }
   }
 })
+
+const productStatusObj = {
+  Scheduled: { color: 'warning' },
+  Published: { color: 'error' },
+  Inactive: { color: 'sucess' }
+}
 
 const UserActivityTimeLine = () => {
   const { timelineMessage } = useMqtt()
@@ -68,13 +75,15 @@ const UserActivityTimeLine = () => {
                       </Typography>
                     </div>
                     <Typography className='mbe-2'>{item.codeSnippet}</Typography>
-                    <div style={{ marginTop: '10px' }}></div>
-                    <div
-                      style={{ marginBottom: '10px' }}
-                      className='flex items-center gap-2.5 is-fit bg-actionHover rounded plb-[5px] pli-2.5'
-                    >
-                      <Typography className='font-medium'> {item.issueType} </Typography>
+                    <div style={{ margin: '10px 0px 10px 0px' }}>
+                      <Chip
+                        label={item.issueType}
+                        variant='tonal'
+                        color={item.issueType.split(' ').length > 2 ? 'error' : 'success'}
+                        size='small'
+                      />
                     </div>
+                    {console.log('es', item.issueType.split(' ').length)}
                     <CurrentTimeline title={item.recommendedFix.title} body={item.recommendedFix.body} />
                   </TimelineContent>
                 </TimelineItem>
