@@ -25,7 +25,7 @@ export const db = [
     email: 'hredmore1@imgur.com',
     currentPlan: 'team',
     status: 'pending',
-    avatar: '/images/avatars/3.png',
+    avatar: '',
     billing: 'Auto Debit'
   },
   {
@@ -39,7 +39,7 @@ export const db = [
     email: 'msicely2@who.int',
     currentPlan: 'enterprise',
     status: 'active',
-    avatar: '/images/avatars/1.png',
+    avatar: '',
     billing: 'Auto Debit'
   },
   {
@@ -53,7 +53,7 @@ export const db = [
     email: 'crisby3@wordpress.com',
     currentPlan: 'team',
     status: 'inactive',
-    avatar: '/images/avatars/3.png',
+    avatar: '',
     billing: 'Manual Paypal'
   },
   {
@@ -67,7 +67,7 @@ export const db = [
     email: 'mhurran4@yahoo.co.jp',
     currentPlan: 'enterprise',
     status: 'pending',
-    avatar: '/images/avatars/1.png',
+    avatar: '',
     billing: 'Manual Cash'
   },
   {
@@ -111,7 +111,7 @@ export const db = [
     email: 'kliger7@vinaora.com',
     currentPlan: 'enterprise',
     status: 'pending',
-    avatar: '/images/avatars/4.png',
+    avatar: '',
     billing: 'Manual Paypal'
   },
   {
@@ -125,7 +125,7 @@ export const db = [
     email: 'fscotfurth8@dailymotion.com',
     currentPlan: 'team',
     status: 'pending',
-    avatar: '/images/avatars/2.png',
+    avatar: '',
     billing: 'Auto Debit'
   },
   {
@@ -139,7 +139,7 @@ export const db = [
     email: 'jbellany9@kickstarter.com',
     currentPlan: 'company',
     status: 'inactive',
-    avatar: '/images/avatars/5.png',
+    avatar: '',
     billing: 'Manual Cash'
   },
   {

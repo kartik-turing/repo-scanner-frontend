@@ -9,7 +9,7 @@ export const db = {
       price: '$999',
       qty: 665,
       status: 'Inactive',
-      image: '/images/apps/ecommerce/product-1.png',
+      image: '/images/avatars/Key.png',
       productBrand: 'Super Retina XDR display footnote Pro Motion technology'
     },
     {
@@ -21,7 +21,7 @@ export const db = {
       price: '$25.50',
       qty: 827,
       status: 'Published',
-      image: '/images/apps/ecommerce/product-2.png',
+      image: '/images/avatars/Key.png',
       productBrand: 'Echo Dot Smart speaker with Alexa'
     },
     {
@@ -33,7 +33,7 @@ export const db = {
       price: '$16.34',
       qty: 804,
       status: 'Published',
-      image: '/images/apps/ecommerce/product-3.png',
+      image: '/images/avatars/Key.png',
       productBrand: 'Modern 10 Inch Battery Operated Wall Clocks'
     },
     {
@@ -45,7 +45,7 @@ export const db = {
       price: '$36.98',
       qty: 528,
       status: 'Scheduled',
-      image: '/images/apps/ecommerce/product-4.png',
+      image: '/images/avatars/Key.png',
       productBrand: 'Lightweight Tennis Shoes Non Slip Gym Workout Shoes'
     },
     {
@@ -57,7 +57,7 @@ export const db = {
       price: '$799',
       qty: 851,
       status: 'Scheduled',
-      image: '/images/apps/ecommerce/product-5.png',
+      image: '/images/avatars/Key.png',
       productBrand: 'Starlight Aluminum Case with Starlight Sport Band.'
     },
     {
@@ -69,7 +69,7 @@ export const db = {
       price: '$299',
       qty: 962,
       status: 'Scheduled',
-      image: '/images/apps/ecommerce/product-6.png',
+      image: '/images/avatars/Key.png',
       productBrand: 'Advanced All-In-One Virtual Reality Headset'
     },
     {
@@ -81,7 +81,7 @@ export const db = {
       price: '$2648.95',
       qty: 965,
       status: 'Published',
-      image: '/images/apps/ecommerce/product-7.png',
+      image: '/images/avatars/Key.png',
       productBrand: 'Laptop M2 Pro chip with 12‑core CPU and 19‑core GPU'
     },
     {
@@ -93,7 +93,7 @@ export const db = {
       price: '$899',
       qty: 447,
       status: 'Published',
-      image: '/images/apps/ecommerce/product-8.png',
+      image: '/images/avatars/Key.png',
       productBrand: 'Android Smartphone, 256GB, 8K Camera'
     },
     {
@@ -105,7 +105,7 @@ export const db = {
       price: '$125',
       qty: 942,
       status: 'Inactive',
-      image: '/images/apps/ecommerce/product-9.png',
+      image: '/images/avatars/Key.png',
       productBrand: 'Air Jordan is a line of basketball shoes produced by Nike'
     },
     {
@@ -117,7 +117,7 @@ export const db = {
       price: '$190.45',
       qty: 133,
       status: 'Scheduled',
-      image: '/images/apps/ecommerce/product-10.png',
+      image: '/images/avatars/Key.png',
       productBrand: 'Armchair, Skartofta black/light grey'
     },
     {

@@ -14,6 +14,8 @@ import Button from '@mui/material/Button'
 import RoleDialog from '@components/dialogs/role-dialog'
 import OpenDialogOnElementClick from '@components/dialogs/OpenDialogOnElementClick'
 import Link from '@components/Link'
+import CustomAvatar from '@/@core/components/mui/Avatar'
+import { getInitials } from '@/utils/getInitials'
 
 // Vars
 const cardData = [
@@ -33,15 +35,20 @@ const RoleCards = () => {
     onClick: e => e.preventDefault()
   }
 
+  const getAvatar = params => {
+    const { fullName } = params
+
+    return (
+      <CustomAvatar skin='light' size={34}>
+        {getInitials(fullName)}
+      </CustomAvatar>
+    )
+  }
+
   const CardProps = {
     className: 'cursor-pointer bs-full',
     children: (
       <Grid container className='bs-full'>
-        <Grid size={{ xs: 5 }}>
-          <div className='flex items-end justify-center bs-full'>
-            <img alt='add-role' src='/images/illustrations/characters/5.png' height={130} />
-          </div>
-        </Grid>
         <Grid size={{ xs: 7 }}>
           <CardContent>
             <div className='flex flex-col items-end gap-4 text-right'>
@@ -69,9 +76,12 @@ const RoleCards = () => {
                 <div className='flex items-center justify-between'>
                   <Typography className='flex-grow'>{`Total ${item.totalUsers} users`}</Typography>
                   <AvatarGroup total={item.totalUsers}>
-                    {item.avatars.map((img, index) => (
-                      <Avatar key={index} alt={item.title} src={`/images/avatars/${img}`} />
-                    ))}
+                    {item.avatars.map(
+                      (img, index) => (
+                        <Avatar key={index} alt={item.title} />
+                      )
+                      // getAvatar({ fullName: item.title })
+                    )}
                   </AvatarGroup>
                 </div>
                 <div className='flex justify-between items-center'>

@@ -107,8 +107,12 @@ const Courses = props => {
               <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index}>
                 <div className='border rounded bs-full'>
                   <div className='pli-2 pbs-2'>
-                    <Link href={getLocalizedUrl('/apps/academy/course-details', locale)} className='flex'>
-                      <img src={item.tutorImg} alt={item.courseTitle} className='is-full' />
+                    <Link
+                      style={{ justifyContent: 'center', alignItems: 'center' }}
+                      href={getLocalizedUrl('/apps/academy/course-details', locale)}
+                      className='flex'
+                    >
+                      <img style={{ width: '200px' }} src={item.tutorImg} alt={item.courseTitle} className='is-full' />
                     </Link>
                   </div>
                   <div className='flex flex-col gap-4 p-5'>

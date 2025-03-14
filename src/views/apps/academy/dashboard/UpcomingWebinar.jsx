@@ -20,16 +20,15 @@ const UpcomingWebinar = () => {
   return (
     <Card>
       <CardContent className='flex flex-col gap-4'>
-        <div className='flex justify-center pli-2.5 pbs-4 rounded bg-primaryLight'>
-          <img src='/images/illustrations/characters/4.png' className='bs-[146px]' />
+        <div className='flex justify-center rounded '>
+          <img className='w-full h-full object-cover' src='/images/illustrations/characters/image.png' />
         </div>
         <div>
           <Typography variant='h5' className='mbe-2'>
             Upcoming Scan
           </Typography>
           <Typography variant='body2'>
-            Your next vulnerability scan is scheduled. Ensure all cryptographic systems are secure and compliant before
-            deployment!{' '}
+            Your next vulnerability scan is scheduled. Ensure all cryptographic systems are secure.{' '}
           </Typography>
         </div>
         <div className='flex flex-wrap justify-between gap-4'>

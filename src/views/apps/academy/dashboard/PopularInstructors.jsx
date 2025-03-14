@@ -35,7 +35,7 @@ const PopularInstructors = () => {
       <CardContent className='flex flex-col gap-4'>
         {data.map((item, i) => (
           <div key={i} className='flex items-center gap-4'>
-            <CustomAvatar size={34} src={item.avatar} />
+            <CustomAvatar size={34} />
             <div className='flex justify-between items-center is-full gap-4'>
               <div>
                 <Typography className='font-medium' color='text.primary'>

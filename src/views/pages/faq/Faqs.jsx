@@ -64,11 +64,6 @@ const FAQ = ({ faqData, searchValue }) => {
               />
             ))}
           </CustomTabList>
-          <img
-            src='/images/illustrations/characters-with-objects/1.png'
-            className='max-md:hidden is-[230px]'
-            alt='john image'
-          />
         </Grid>
         <Grid size={{ xs: 12, sm: 7, md: 8, xl: 9 }}>
           {filteredData?.map((faq, index) => (

@@ -115,9 +115,7 @@ const CourseTable = ({ courseData }) => {
         header: 'File Name',
         cell: ({ row }) => (
           <div className='flex items-center gap-4'>
-            <CustomAvatar variant='rounded' skin='light' color={row.original.color}>
-              <i className={classnames('text-[28px]', row.original.logo)} />
-            </CustomAvatar>
+            <CustomAvatar variant='rounded' skin='light' color={row.original.color} src={row.original.logo} />
             <div className='flex flex-col'>
               <Typography
                 component={Link}
@@ -128,7 +126,7 @@ const CourseTable = ({ courseData }) => {
                 {row.original.courseTitle}
               </Typography>
               <div className='flex items-center gap-2'>
-                <CustomAvatar src={row.original.image} size={22} />
+                <CustomAvatar size={22} />
                 <Typography variant='body2' color='text.primary'>
                   {row.original.user}
                 </Typography>
