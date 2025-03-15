@@ -30,8 +30,8 @@ const SupportTracker = () => {
 
   // Extracting data from progressMessages
   const sysytemPerfomanceJSON = progressMessages[0] ?? {
-    title: 'System Performance Dashboard',
-    subtext: 'Real-time tracking of support tickets and file scanning activity',
+    title: '',
+    subtext: '',
     support_tracker: {
       total_issues_found: 0, // Corrected key
       completed_task_percentage: 0, // Corrected key

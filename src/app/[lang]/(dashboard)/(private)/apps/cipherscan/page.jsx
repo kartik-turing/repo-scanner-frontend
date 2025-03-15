@@ -1,16 +1,12 @@
 // MUI Imports
 import Grid from '@mui/material/Grid2'
 
-// Component Imports
-import ProductListTable from '@views/apps/ecommerce/products/list/ProductListTable'
-
 // Data Imports
 import { getEcommerceData } from '@/app/server/actions'
 import ProductCard from '@/views/apps/cipherscan/ProductCard'
 import ProductVariants from '@/views/apps/cipherscan/ProductVariants'
 import SupportTracker from '@/views/apps/cipherscan/SupportTracker'
 import UserActivityTimeLine from '@/views/apps/cipherscan/UserActivityTimeline'
-import CurrentTimeline from '@/views/apps/cipherscan/CurrentTimeline'
 
 /**
  * ! If you need data using an API call, uncomment the below API code, update the `process.env.API_URL` variable in the
