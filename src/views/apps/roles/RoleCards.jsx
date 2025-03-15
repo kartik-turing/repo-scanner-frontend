@@ -19,11 +19,11 @@ import { getInitials } from '@/utils/getInitials'
 
 // Vars
 const cardData = [
-  { totalUsers: 4, title: 'Administrator', avatars: ['1.png', '2.png', '3.png', '4.png'] },
-  { totalUsers: 7, title: 'Editor', avatars: ['5.png', '6.png', '7.png'] },
-  { totalUsers: 5, title: 'Users', avatars: ['4.png', '5.png', '6.png'] },
-  { totalUsers: 6, title: 'Support', avatars: ['1.png', '2.png', '3.png'] },
-  { totalUsers: 10, title: 'Restricted User', avatars: ['4.png', '5.png', '6.png'] }
+  { totalUsers: 4, title: 'Administrator', avatars: ['Nitin Tayal', 'Srijan D', 'Piyush T', 'Himanshu T'] },
+  { totalUsers: 7, title: 'Editor', avatars: ['Kitin Tayal', 'Jrijan D', 'Liyush T', 'Oimanshu T'] },
+  { totalUsers: 5, title: 'Users', avatars: ['Ritin Tayal', 'Irijan D', 'Siyush T', 'Himanshu T'] },
+  { totalUsers: 6, title: 'Support', avatars: ['Nitin Tayal', 'Lrijan D', 'Piyush T', 'Himanshu T'] },
+  { totalUsers: 10, title: 'Restricted User', avatars: ['Witin Tayal', 'Srijan D', 'Piyush T', 'Himanshu T'] }
 ]
 
 const RoleCards = () => {
@@ -35,6 +35,24 @@ const RoleCards = () => {
     onClick: e => e.preventDefault()
   }
 
+  const CardProps = {
+    className: 'cursor-pointer bs-full',
+    children: (
+      <Grid container className='bs-full'>
+        <Grid size={{ xs: 12 }}>
+          <CardContent>
+            <div className='flex flex-col items-center justify-center gap-4 bs-full'>
+              <Typography>Add new role, if it doesn't exist.</Typography>
+              <Button variant='contained' size='small'>
+                Add Role
+              </Button>
+            </div>
+          </CardContent>
+        </Grid>
+      </Grid>
+    )
+  }
+
   const getAvatar = params => {
     const { fullName } = params
 
@@ -42,27 +60,6 @@ const RoleCards = () => {
       <CustomAvatar skin='light' size={34}>
         {getInitials(fullName)}
       </CustomAvatar>
-    )
-  }
-
-  const CardProps = {
-    className: 'cursor-pointer bs-full',
-    children: (
-      <Grid container className='bs-full'>
-        <Grid size={{ xs: 7 }}>
-          <CardContent>
-            <div className='flex flex-col items-end gap-4 text-right'>
-              <Button variant='contained' size='small'>
-                Add Role
-              </Button>
-              <Typography>
-                Add new role, <br />
-                if it doesn&#39;t exist.
-              </Typography>
-            </div>
-          </CardContent>
-        </Grid>
-      </Grid>
     )
   }
 
@@ -77,10 +74,7 @@ const RoleCards = () => {
                   <Typography className='flex-grow'>{`Total ${item.totalUsers} users`}</Typography>
                   <AvatarGroup total={item.totalUsers}>
                     {item.avatars.map(
-                      (img, index) => (
-                        <Avatar key={index} alt={item.title} />
-                      )
-                      // getAvatar({ fullName: item.title })
+                      (name, index) => ((<Avatar key={index} alt={name} />), getAvatar({ fullName: name }))
                     )}
                   </AvatarGroup>
                 </div>

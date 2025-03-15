@@ -44,6 +44,7 @@ import { getLocalizedUrl } from '@/utils/i18n'
 
 // Style Imports
 import tableStyles from '@core/styles/table.module.css'
+import { Chip } from '@mui/material'
 
 export const paymentStatus = {
   1: { text: 'Paid', color: 'success' },
@@ -152,10 +153,18 @@ const CustomerListTable = ({ customerData }) => {
       }),
       columnHelper.accessor('assignedTo', {
         header: 'Access Level',
-        cell: ({ row }) => (
+        cell: ({ row, index }) => (
           <div className='flex items-center gap-2'>
             <img src={row.original.countryFlag} height={22} />
-            <Typography>{row.original.role ? row.original.role : 'NOT ASSIGNED'}</Typography>
+            {/* <Typography>{row.original.role ? row.original.role : 'NOT ASSIGNED'}</Typography> */}
+            <Chip
+              key={index}
+              variant='tonal'
+              label={row.original.role ? row.original.role : 'NOT ASSIGNED'}
+              color={'primary'}
+              size='small'
+              className='capitalize mie-4'
+            />
           </div>
         )
       }),

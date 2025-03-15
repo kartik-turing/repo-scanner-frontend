@@ -138,7 +138,7 @@ const ProductListTable = ({ productData }) => {
         header: 'KEY IDENTIFIER',
         cell: ({ row }) => (
           <div className='flex items-center gap-4'>
-            <img src={row.original.image} width={38} height={38} className='rounded bg-actionHover' />
+            <img src={row.original.image} width={20} height={20} className='rounded ' />
             <div className='flex flex-col'>
               <Typography className='font-medium' color='text.primary'>
                 {row.original.productName}

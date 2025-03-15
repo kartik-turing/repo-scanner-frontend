@@ -27,7 +27,7 @@ const MyCourseHeader = props => {
 
   return (
     <Card className='relative flex justify-center'>
-      <img src={leftIllustration} className='max-md:hidden absolute max-is-[100px] top-12 start-12' />
+      {/* <img src={leftIllustration} className='max-md:hidden absolute max-is-[100px] top-12 start-12' /> */}
       <div className='flex flex-col items-center gap-4 max-md:pli-5 plb-12 md:is-1/2'>
         <Typography variant='h4' className='text-center md:is-3/4'>
           Education, talents, and career opportunities. <span className='text-primary'>All in one place.</span>
@@ -48,12 +48,12 @@ const MyCourseHeader = props => {
           </CustomIconButton>
         </div>
       </div>
-      <img
+      {/* <img
         src='/images/apps/academy/9.png'
         className={classnames('max-md:hidden absolute max-bs-[180px] bottom-0 end-0', {
           'scale-x-[-1]': theme.direction === 'rtl'
         })}
-      />
+      /> */}
     </Card>
   )
 }
