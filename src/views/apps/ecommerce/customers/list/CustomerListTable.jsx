@@ -127,47 +127,47 @@ const CustomerListTable = ({ customerData }) => {
           />
         )
       },
-      columnHelper.accessor('customer', {
-        header: 'Customers',
+      columnHelper.accessor('name', {
+        header: 'Users',
         cell: ({ row }) => (
           <div className='flex items-center gap-3'>
-            {getAvatar({ avatar: row.original.avatar, customer: row.original.customer })}
+            {getAvatar({ name: row.original.name })}
             <div className='flex flex-col items-start'>
               <Typography
                 component={Link}
                 color='text.primary'
-                href={getLocalizedUrl(`/apps/ecommerce/customers/details/${row.original.customerId}`, locale)}
+                href={getLocalizedUrl(`/apps/ecommerce/customers/details/${row.original.id}`, locale)}
                 className='font-medium hover:text-primary'
               >
-                {row.original.customer}
+                {row.original.name}
               </Typography>
               <Typography variant='body2'>{row.original.email}</Typography>
             </div>
           </div>
         )
       }),
-      columnHelper.accessor('customerId', {
+      columnHelper.accessor('id', {
         header: 'Usser Id',
-        cell: ({ row }) => <Typography color='text.primary'>#{row.original.customerId}</Typography>
+        cell: ({ row }) => <Typography color='text.primary'>#{row.original.id}</Typography>
       }),
       columnHelper.accessor('assignedTo', {
         header: 'Access Level',
         cell: ({ row }) => (
           <div className='flex items-center gap-2'>
             <img src={row.original.countryFlag} height={22} />
-            <Typography>{row.original.country}</Typography>
+            <Typography>{row.original.role ? row.original.role : 'NOT ASSIGNED'}</Typography>
           </div>
         )
       }),
-      columnHelper.accessor('order', {
-        header: 'Keys Assigned',
-        cell: ({ row }) => <Typography>{row.original.order}</Typography>
-      }),
-      columnHelper.accessor('totalSpent', {
+      // columnHelper.accessor('order', {
+      //   header: 'Keys Assigned',
+      //   cell: ({ row }) => <Typography>{row.original.order}</Typography>
+      // }),
+      columnHelper.accessor('createdAt', {
         header: 'Last Login',
         cell: ({ row }) => (
           <Typography className='font-medium' color='text.primary'>
-            ${row.original.totalSpent.toLocaleString()}
+            ${row.original.createdAt.toLocaleString()}
           </Typography>
         )
       })
@@ -206,17 +206,13 @@ const CustomerListTable = ({ customerData }) => {
   })
 
   const getAvatar = params => {
-    const { avatar, customer } = params
-
-    if (avatar) {
-      return <CustomAvatar src={avatar} skin='light' size={34} />
-    } else {
-      return (
-        <CustomAvatar skin='light' size={34}>
-          {getInitials(customer)}
-        </CustomAvatar>
-      )
-    }
+    const { name } = params
+    console.log('name:', name)
+    return (
+      <CustomAvatar skin='light' size={34}>
+        {getInitials(name)}
+      </CustomAvatar>
+    )
   }
 
   return (
@@ -256,7 +252,7 @@ const CustomerListTable = ({ customerData }) => {
               startIcon={<i className='tabler-plus' />}
               onClick={() => setCustomerUserOpen(!customerUserOpen)}
             >
-              Add Customer
+              Add User
             </Button>
           </div>
         </CardContent>

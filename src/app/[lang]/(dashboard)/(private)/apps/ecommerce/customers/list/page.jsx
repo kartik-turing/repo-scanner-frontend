@@ -1,7 +1,7 @@
 import CustomerListTable from '@views/apps/ecommerce/customers/list/CustomerListTable'
 
 // Data Imports
-import { getEcommerceData } from '@/app/server/actions'
+// import { getEcommerceData } from '@/app/server/actions'
 
 /**
  * ! If you need data using an API call, uncomment the below API code, update the `process.env.API_URL` variable in the
@@ -9,21 +9,34 @@ import { getEcommerceData } from '@/app/server/actions'
  * ! Also, remove the above server action import and the action itself from the `src/app/server/actions.ts` file to clean up unused code
  * ! because we've used the server action for getting our static data.
  */
-/* const getEcommerceData = async () => {
-  // Vars
-  const res = await fetch(`${process.env.API_URL}/apps/ecommerce`)
+const getEcommerceData = async () => {
+  try {
+    const res = await fetch(`https://api-dev.genieapps.co.in/api/utopia/users`, {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${process.env.BEARER_TOKEN}`,
+        Accept: '*/*'
+      }
+    })
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch ecommerce data')
+    if (!res.ok) {
+      throw new Error(`Failed to fetch eCommerce data: ${res.status} ${res.statusText}`)
+    }
+
+    const data = await res.json()
+    console.log('Fetched data:', data.data.users)
+
+    return data.data.users
+  } catch (error) {
+    console.error('Error fetching eCommerce data:', error)
+    throw error
   }
+}
 
-  return res.json()
-} */
 const CustomerListTablePage = async () => {
-  // Vars
   const data = await getEcommerceData()
 
-  return <CustomerListTable customerData={data?.customerData} />
+  return <CustomerListTable customerData={data} />
 }
 
 export default CustomerListTablePage
