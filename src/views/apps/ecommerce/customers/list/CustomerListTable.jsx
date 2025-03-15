@@ -147,7 +147,7 @@ const CustomerListTable = ({ customerData }) => {
         )
       }),
       columnHelper.accessor('id', {
-        header: 'Usser Id',
+        header: 'User Id',
         cell: ({ row }) => <Typography color='text.primary'>#{row.original.id}</Typography>
       }),
       columnHelper.accessor('assignedTo', {
