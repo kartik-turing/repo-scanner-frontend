@@ -43,7 +43,7 @@ const shortcuts = [
     subtitle: 'Manage Users'
   },
   {
-    url: '/apps/roles',
+    url: '/apps/vault',
     icon: 'tabler-users-group',
     title: 'Role Management',
     subtitle: 'Permissions'

@@ -44,6 +44,9 @@ const MenuItem = (props, ref) => {
     rootStyles,
     ...rest
   } = props
+  console.log('props', props)
+
+  console.log('rest', rest)
 
   // States
   const [active, setActive] = useState(false)
@@ -75,7 +78,9 @@ const MenuItem = (props, ref) => {
 
   // Handle the click event.
   const handleClick = () => {
+    console.log('clicked')
     if (isToggled) {
+      console.log('nitin-toggleVerticalNav', toggleVerticalNav)
       toggleVerticalNav()
     }
   }
@@ -83,7 +88,7 @@ const MenuItem = (props, ref) => {
   // Change active state when the url changes
   useEffect(() => {
     const href = rest.href || (component && typeof component !== 'string' && component.props.href)
-
+    console.log('hello href', href)
     if (href) {
       // Check if the current url matches any of the children urls
       if (exactMatch ? pathname === href : activeUrl && pathname.includes(activeUrl)) {

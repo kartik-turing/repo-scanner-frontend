@@ -70,8 +70,8 @@ const VerticalMenu = ({ dictionary, scrollMenu }) => {
         {/* <MenuItem href={`/${locale}/dashboards/crm`}>{dictionary['navigation'].crm}</MenuItem> */}
         {/* <MenuItem href={`/${locale}/dashboards/analytics`}>{dictionary['navigation'].analytics}</MenuItem> */}
         {/* <MenuItem href={`/${locale}/dashboards/ecommerce`}>{dictionary['navigation'].eCommerce}</MenuItem> */}
-        <MenuItem href={`/${locale}/dashboards/academy`}>{dictionary['navigation'].academy}</MenuItem>
-        <MenuItem href={`/${locale}/apps/academy/my-courses`}>{dictionary['navigation'].qgsdk}</MenuItem>
+        <MenuItem href={`/${locale}/apps/dashboard`}>{dictionary['navigation'].academy}</MenuItem>
+        <MenuItem href={`/${locale}/apps/sdk`}>{dictionary['navigation'].qgsdk}</MenuItem>
         {/* <MenuItem href={`/${locale}/apps/academy/course-details`}>{dictionary['navigation'].qgSDKDetails}</MenuItem> */}
 
         {/* <MenuItem href={`/${locale}/dashboards/logistics`}>{dictionary['navigation'].logistics}</MenuItem> */}
@@ -96,10 +96,10 @@ const VerticalMenu = ({ dictionary, scrollMenu }) => {
         {/* <MenuSection label={dictionary['navigation'].appsPages}> */}
         {/* <SubMenu label={dictionary['navigation'].eCommerce} icon={<i className='tabler-shopping-cart' />}> */}
         {/* <MenuItem href={`/${locale}/apps/ecommerce/dashboard`}>{dictionary['navigation'].dashboard}</MenuItem> */}
+        <MenuItem href={`/${locale}/apps/keymanagement`}>{dictionary['navigation'].qgkms}</MenuItem>
         {/* <SubMenu label={dictionary['navigation'].products}> */}
-        <MenuItem href={`/${locale}/apps/ecommerce/products/list`}>{dictionary['navigation'].qgkms}</MenuItem>
         {/* <MenuItem href={`/${locale}/apps/ecommerce/products/add`}>{dictionary['navigation'].addkey}</MenuItem> */}
-        <MenuItem href={`/${locale}/apps/roles`}>{dictionary['navigation'].qgVault}</MenuItem>
+        <MenuItem href={`/${locale}/apps/vault`}>{dictionary['navigation'].qgVault}</MenuItem>
         <MenuItem href={`/${locale}/apps/cipherscan`}>{dictionary['navigation'].cipherscan}</MenuItem>
 
         {/* <MenuItem href={`/${locale}/apps/ecommerce/products/category`}>
@@ -117,7 +117,7 @@ const VerticalMenu = ({ dictionary, scrollMenu }) => {
               </MenuItem>
             </SubMenu> */}
         {/* <SubMenu label={dictionary['navigation'].customers}> */}
-        <MenuItem href={`/${locale}/apps/ecommerce/customers/list`}>{dictionary['navigation'].qgusers}</MenuItem>
+        <MenuItem href={`/${locale}/apps/users`}>{dictionary['navigation'].qgusers}</MenuItem>
         {/* <MenuItem
                 href={`/${locale}/apps/ecommerce/customers/details/879861`}
                 exactMatch={false}
@@ -172,7 +172,7 @@ const VerticalMenu = ({ dictionary, scrollMenu }) => {
           </SubMenu> */}
         {/* <SubMenu label={dictionary['navigation'].user} icon={<i className='tabler-user' />}> */}
         {/* <MenuItem href={`/${locale}/apps/user/list`}>{dictionary['navigation'].list}</MenuItem> */}
-        <MenuItem href={`/${locale}/apps/user/view`}>{dictionary['navigation'].qgIntegrations}</MenuItem>
+        <MenuItem href={`/${locale}/apps/integrations`}>{dictionary['navigation'].qgIntegrations}</MenuItem>
         {/* </SubMenu> */}
         {/* <SubMenu label={dictionary['navigation'].rolesPermissions} icon={<i className='tabler-lock' />}> */}
         <MenuItem href={`/${locale}/apps/permissions`}>{dictionary['navigation'].qgPermissions}</MenuItem>
@@ -180,7 +180,7 @@ const VerticalMenu = ({ dictionary, scrollMenu }) => {
         {/* <SubMenu label={dictionary['navigation'].pages} icon={<i className='tabler-file' />}> */}
         {/* <MenuItem href={`/${locale}/pages/user-profile`}>{dictionary['navigation'].userProfile}</MenuItem> */}
         {/* <MenuItem href={`/${locale}/pages/account-settings`}>{dictionary['navigation'].accountSettings}</MenuItem> */}
-        <MenuItem href={`/${locale}/pages/faq`}>{dictionary['navigation'].qgSupport}</MenuItem>
+        <MenuItem href={`/${locale}/apps/support`}>{dictionary['navigation'].qgSupport}</MenuItem>
         {/* <MenuItem href={`/${locale}/pages/pricing`}>{dictionary['navigation'].pricing}</MenuItem> */}
         {/* <SubMenu label={dictionary['navigation'].miscellaneous}>
               <MenuItem href={`/${locale}/pages/misc/coming-soon`} target='_blank'>

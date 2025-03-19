@@ -1,11 +1,12 @@
 // Component Imports
-import AcademyMyCourse from '@/views/apps/academy/my-courses'
+// import AcademyMyCourse from '@/views/apps/sdk'
 
 // Server Action Imports
 import { getServerMode } from '@core/utils/serverHelpers'
 
 // Data Imports
 import { getAcademyData } from '@/app/server/actions'
+import AcademyMyCourse from '@/views/apps/sdk'
 
 /**
  * ! If you need data using an API call, uncomment the below API code, update the `process.env.API_URL` variable in the

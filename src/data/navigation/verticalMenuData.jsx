@@ -27,7 +27,7 @@ const verticalMenuData = dictionary => [
       {
         label: dictionary['navigation'].academy,
         icon: 'tabler-circle',
-        href: '/dashboards/academy'
+        href: '/apps/dashboard'
       },
       {
         label: dictionary['navigation'].logistics,
@@ -91,7 +91,7 @@ const verticalMenuData = dictionary => [
             children: [
               {
                 label: dictionary['navigation'].list,
-                href: '/apps/ecommerce/products/list'
+                href: '/apps/keymanagement'
               },
               {
                 label: dictionary['navigation'].add,
@@ -123,7 +123,7 @@ const verticalMenuData = dictionary => [
             children: [
               {
                 label: dictionary['navigation'].list,
-                href: '/apps/ecommerce/customers/list'
+                href: '/apps/users'
               },
               {
                 label: dictionary['navigation'].details,
@@ -157,7 +157,7 @@ const verticalMenuData = dictionary => [
           },
           {
             label: dictionary['navigation'].myCourses,
-            href: '/apps/academy/my-courses'
+            href: '/apps/sdk'
           },
           {
             label: dictionary['navigation'].courseDetails,
@@ -248,7 +248,7 @@ const verticalMenuData = dictionary => [
           {
             label: dictionary['navigation'].view,
             icon: 'tabler-circle',
-            href: '/apps/user/view'
+            href: '/apps/integrations'
           }
         ]
       },
@@ -259,7 +259,7 @@ const verticalMenuData = dictionary => [
           {
             label: dictionary['navigation'].roles,
             icon: 'tabler-circle',
-            href: '/apps/roles'
+            href: '/apps/vault'
           },
           {
             label: dictionary['navigation'].permissions,
@@ -285,7 +285,7 @@ const verticalMenuData = dictionary => [
           {
             label: dictionary['navigation'].faq,
             icon: 'tabler-circle',
-            href: '/pages/faq'
+            href: '/apps/support'
           },
           {
             label: dictionary['navigation'].pricing,

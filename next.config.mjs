@@ -4,19 +4,19 @@ const nextConfig = {
   basePath: process.env.BASEPATH,
   env: {
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
-    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET
   },
   redirects: async () => {
     return [
       {
         source: '/',
-        destination: '/en/dashboards/academy',
+        destination: '/en/apps/dashboard',
         permanent: true,
         locale: false
       },
       {
         source: '/:lang(en|fr|ar)',
-        destination: '/:lang/dashboards/academy',
+        destination: '/:lang/apps/dashboard',
         permanent: true,
         locale: false
       },

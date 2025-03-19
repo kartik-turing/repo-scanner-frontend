@@ -137,7 +137,7 @@ const UserDropdown = () => {
                     <i className='tabler-currency-dollar' />
                     <Typography color='text.primary'>Pricing</Typography>
                   </MenuItem>
-                  <MenuItem className='mli-2 gap-3' onClick={e => handleDropdownClose(e, '/pages/faq')}>
+                  <MenuItem className='mli-2 gap-3' onClick={e => handleDropdownClose(e, '/apps/support')}>
                     <i className='tabler-help-circle' />
                     <Typography color='text.primary'>FAQ</Typography>
                   </MenuItem>

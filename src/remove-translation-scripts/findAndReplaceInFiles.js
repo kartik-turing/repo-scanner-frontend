@@ -74,7 +74,7 @@ async function updateNextConfig() {
 
   const redirect = `return [{
     source: '/',
-    destination: '/dashboards/academy',
+    destination: '/apps/dashboard',
     permanent: true
   }]`
 

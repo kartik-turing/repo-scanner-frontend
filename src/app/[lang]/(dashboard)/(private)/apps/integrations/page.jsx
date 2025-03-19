@@ -5,12 +5,12 @@ import dynamic from 'next/dynamic'
 import Grid from '@mui/material/Grid2'
 
 // Component Imports
-import UserLeftOverview from '@views/apps/user/view/user-left-overview'
-import UserRight from '@views/apps/user/view/user-right'
+import UserLeftOverview from '@views/apps/integrations/user-left-overview'
+import UserRight from '@views/apps/integrations/user-right'
 
 // Data Imports
 import { getPricingData } from '@/app/server/actions'
-const ConnectionsTab = dynamic(() => import('@views/apps/user/view/user-right/connections'))
+const ConnectionsTab = dynamic(() => import('@views/apps/integrations/user-right/connections'))
 
 // Vars
 const tabContentList = data => ({

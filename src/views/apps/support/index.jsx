@@ -7,9 +7,9 @@ import { useState } from 'react'
 import Grid from '@mui/material/Grid2'
 
 // Component Imports
-import FaqHeader from '@views/pages/faq/FaqHeader'
-import Faqs from '@views/pages/faq/Faqs'
-import FaqFooter from '@views/pages/faq/FaqFooter'
+import FaqHeader from '@/views/apps/support/FaqHeader'
+import Faqs from '@/views/apps/support/Faqs'
+import FaqFooter from '@/views/apps/support/FaqFooter'
 
 const FAQ = ({ data }) => {
   // States

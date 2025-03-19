@@ -83,7 +83,7 @@ const HorizontalMenu = ({ dictionary }) => {
           <MenuItem href={`/${locale}/dashboards/ecommerce`} icon={<i className='tabler-shopping-cart' />}>
             {dictionary['navigation'].eCommerce}
           </MenuItem>
-          <MenuItem href={`/${locale}/dashboards/academy`} icon={<i className='tabler-school' />}>
+          <MenuItem href={`/${locale}/apps/dashboard`} icon={<i className='tabler-school' />}>
             {dictionary['navigation'].academy}
           </MenuItem>
           <MenuItem href={`/${locale}/dashboards/logistics`} icon={<i className='tabler-truck' />}>
@@ -94,7 +94,7 @@ const HorizontalMenu = ({ dictionary }) => {
           <SubMenu label={dictionary['navigation'].eCommerce} icon={<i className='tabler-shopping-cart' />}>
             <MenuItem href={`/${locale}/apps/ecommerce/dashboard`}>{dictionary['navigation'].dashboard}</MenuItem>
             <SubMenu label={dictionary['navigation'].products}>
-              <MenuItem href={`/${locale}/apps/ecommerce/products/list`}>{dictionary['navigation'].list}</MenuItem>
+              <MenuItem href={`/${locale}/apps/keymanagement`}>{dictionary['navigation'].list}</MenuItem>
               <MenuItem href={`/${locale}/apps/ecommerce/products/add`}>{dictionary['navigation'].add}</MenuItem>
               <MenuItem href={`/${locale}/apps/ecommerce/products/category`}>
                 {dictionary['navigation'].category}
@@ -111,7 +111,7 @@ const HorizontalMenu = ({ dictionary }) => {
               </MenuItem>
             </SubMenu>
             <SubMenu label={dictionary['navigation'].customers}>
-              <MenuItem href={`/${locale}/apps/ecommerce/customers/list`}>{dictionary['navigation'].list}</MenuItem>
+              <MenuItem href={`/${locale}/apps/users`}>{dictionary['navigation'].list}</MenuItem>
               <MenuItem
                 href={`/${locale}/apps/ecommerce/customers/details/879861`}
                 exactMatch={false}
@@ -128,7 +128,7 @@ const HorizontalMenu = ({ dictionary }) => {
           </SubMenu>
           <SubMenu label={dictionary['navigation'].academy} icon={<i className='tabler-school' />}>
             <MenuItem href={`/${locale}/apps/academy/dashboard`}>{dictionary['navigation'].dashboard}</MenuItem>
-            <MenuItem href={`/${locale}/apps/academy/my-courses`}>{dictionary['navigation'].myCourses}</MenuItem>
+            <MenuItem href={`/${locale}/apps/sdk`}>{dictionary['navigation'].myCourses}</MenuItem>
             <MenuItem href={`/${locale}/apps/academy/course-details`}>
               {dictionary['navigation'].courseDetails}
             </MenuItem>
@@ -170,10 +170,10 @@ const HorizontalMenu = ({ dictionary }) => {
           </SubMenu>
           <SubMenu label={dictionary['navigation'].user} icon={<i className='tabler-user' />}>
             <MenuItem href={`/${locale}/apps/user/list`}>{dictionary['navigation'].list}</MenuItem>
-            <MenuItem href={`/${locale}/apps/user/view`}>{dictionary['navigation'].view}</MenuItem>
+            <MenuItem href={`/${locale}/apps/integrations`}>{dictionary['navigation'].view}</MenuItem>
           </SubMenu>
           <SubMenu label={dictionary['navigation'].rolesPermissions} icon={<i className='tabler-lock' />}>
-            <MenuItem href={`/${locale}/apps/roles`}>{dictionary['navigation'].roles}</MenuItem>
+            <MenuItem href={`/${locale}/apps/vault`}>{dictionary['navigation'].roles}</MenuItem>
             <MenuItem href={`/${locale}/apps/permissions`}>{dictionary['navigation'].permissions}</MenuItem>
           </SubMenu>
         </SubMenu>
@@ -184,7 +184,7 @@ const HorizontalMenu = ({ dictionary }) => {
           <MenuItem href={`/${locale}/pages/account-settings`} icon={<i className='tabler-settings' />}>
             {dictionary['navigation'].accountSettings}
           </MenuItem>
-          <MenuItem href={`/${locale}/pages/faq`} icon={<i className='tabler-help-circle' />}>
+          <MenuItem href={`/${locale}/apps/support`} icon={<i className='tabler-help-circle' />}>
             {dictionary['navigation'].faq}
           </MenuItem>
           <MenuItem href={`/${locale}/pages/pricing`} icon={<i className='tabler-currency-dollar' />}>

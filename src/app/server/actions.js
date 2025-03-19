@@ -12,7 +12,7 @@ import { db as invoiceData } from '@/fake-db/apps/invoice'
 import { db as userData } from '@/fake-db/apps/userList'
 import { db as permissionData } from '@/fake-db/apps/permissions'
 import { db as profileData } from '@/fake-db/pages/userProfile'
-import { db as faqData } from '@/fake-db/pages/faq'
+import { db as faqData } from '@/fake-db/apps/support'
 import { db as pricingData } from '@/fake-db/pages/pricing'
 import { db as statisticsData } from '@/fake-db/pages/widgetExamples'
 

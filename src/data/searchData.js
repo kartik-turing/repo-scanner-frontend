@@ -23,7 +23,7 @@ const data = [
   {
     id: '4',
     name: 'Academy Dashboard',
-    url: '/dashboards/academy',
+    url: '/apps/dashboard',
     icon: 'tabler-school',
     section: 'Dashboards'
   },
@@ -84,7 +84,7 @@ const data = [
   {
     id: '12',
     name: 'eCommerce - Product List',
-    url: '/apps/ecommerce/products/list',
+    url: '/apps/keymanagement',
     icon: 'tabler-list',
     section: 'Apps'
   },
@@ -119,7 +119,7 @@ const data = [
   {
     id: '17',
     name: 'eCommerce - Customer List',
-    url: '/apps/ecommerce/customers/list',
+    url: '/apps/users',
     icon: 'tabler-user',
     section: 'Apps'
   },
@@ -161,7 +161,7 @@ const data = [
   {
     id: '23',
     name: 'Academy - My Courses',
-    url: '/apps/academy/my-courses',
+    url: '/apps/sdk',
     icon: 'tabler-list',
     section: 'Apps'
   },
@@ -252,14 +252,14 @@ const data = [
   {
     id: '36',
     name: 'User View',
-    url: '/apps/user/view',
+    url: '/apps/integrations',
     icon: 'tabler-file-text',
     section: 'Apps'
   },
   {
     id: '37',
     name: 'Roles',
-    url: '/apps/roles',
+    url: '/apps/vault',
     icon: 'tabler-user-shield',
     section: 'Apps'
   },
@@ -287,7 +287,7 @@ const data = [
   {
     id: '41',
     name: 'FAQ',
-    url: '/pages/faq',
+    url: '/apps/support',
     icon: 'tabler-help-circle',
     section: 'Pages'
   },

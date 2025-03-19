@@ -54,7 +54,7 @@ const defaultSuggestions = [
       },
       {
         label: 'Roles & Permissions',
-        href: '/apps/roles',
+        href: '/apps/vault',
         icon: 'tabler-lock'
       }
     ]
@@ -79,7 +79,7 @@ const defaultSuggestions = [
       },
       {
         label: 'FAQ',
-        href: '/pages/faq',
+        href: '/apps/support',
         icon: 'tabler-help-circle'
       }
     ]

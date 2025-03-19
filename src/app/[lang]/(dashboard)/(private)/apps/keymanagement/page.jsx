@@ -2,11 +2,11 @@
 import Grid from '@mui/material/Grid2'
 
 // Component Imports
-import ProductListTable from '@views/apps/ecommerce/products/list/ProductListTable'
-import ProductCard from '@views/apps/ecommerce/products/list/ProductCard'
+import ProductListTable from '@views/apps/keymanagement/ProductListTable'
 
 // Data Imports
 import { getEcommerceData } from '@/app/server/actions'
+import ProductCard from '@/views/apps/keymanagement/ProductCard'
 
 /**
  * ! If you need data using an API call, uncomment the below API code, update the `process.env.API_URL` variable in the

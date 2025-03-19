@@ -53,16 +53,6 @@ const RoleCards = () => {
     )
   }
 
-  const getAvatar = params => {
-    const { fullName } = params
-
-    return (
-      <CustomAvatar skin='light' size={34}>
-        {getInitials(fullName)}
-      </CustomAvatar>
-    )
-  }
-
   return (
     <>
       <Grid container spacing={6}>
@@ -73,9 +63,11 @@ const RoleCards = () => {
                 <div className='flex items-center justify-between'>
                   <Typography className='flex-grow'>{`Total ${item.totalUsers} users`}</Typography>
                   <AvatarGroup total={item.totalUsers}>
-                    {item.avatars.map(
-                      (name, index) => ((<Avatar key={index} alt={name} />), getAvatar({ fullName: name }))
-                    )}
+                    {item.avatars.map((name, index) => (
+                      <CustomAvatar key={name} skin='light' size={34}>
+                        {getInitials(name)}
+                      </CustomAvatar>
+                    ))}
                   </AvatarGroup>
                 </div>
                 <div className='flex justify-between items-center'>

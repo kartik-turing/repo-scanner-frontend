@@ -23,7 +23,7 @@ const horizontalMenuData = dictionary => [
       {
         label: dictionary['navigation'].academy,
         icon: 'tabler-school',
-        href: '/dashboards/academy'
+        href: '/dashboard'
       },
       {
         label: dictionary['navigation'].logistics,
@@ -49,7 +49,7 @@ const horizontalMenuData = dictionary => [
             children: [
               {
                 label: dictionary['navigation'].list,
-                href: '/apps/ecommerce/products/list'
+                href: '/apps/keymanagement'
               },
               {
                 label: dictionary['navigation'].add,
@@ -81,7 +81,7 @@ const horizontalMenuData = dictionary => [
             children: [
               {
                 label: dictionary['navigation'].list,
-                href: '/apps/ecommerce/customers/list'
+                href: '/apps/users'
               },
               {
                 label: dictionary['navigation'].details,
@@ -115,7 +115,7 @@ const horizontalMenuData = dictionary => [
           },
           {
             label: dictionary['navigation'].myCourses,
-            href: '/apps/academy/my-courses'
+            href: '/apps/sdk'
           },
           {
             label: dictionary['navigation'].courseDetails,
@@ -201,7 +201,7 @@ const horizontalMenuData = dictionary => [
           {
             label: dictionary['navigation'].view,
             icon: 'tabler-circle',
-            href: '/apps/user/view'
+            href: '/apps/integrations'
           }
         ]
       },
@@ -212,7 +212,7 @@ const horizontalMenuData = dictionary => [
           {
             label: dictionary['navigation'].roles,
             icon: 'tabler-circle',
-            href: '/apps/roles'
+            href: '/apps/vault'
           },
           {
             label: dictionary['navigation'].permissions,
@@ -240,7 +240,7 @@ const horizontalMenuData = dictionary => [
       {
         label: dictionary['navigation'].faq,
         icon: 'tabler-help-circle',
-        href: '/pages/faq'
+        href: '/apps/support'
       },
       {
         label: dictionary['navigation'].pricing,

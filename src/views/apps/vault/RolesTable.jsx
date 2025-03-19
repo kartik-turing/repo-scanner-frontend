@@ -197,7 +197,7 @@ const RolesTable = ({ tableData }) => {
               <i className='tabler-trash text-textSecondary' />
             </IconButton>
             <IconButton>
-              <Link href={getLocalizedUrl('/apps/user/view', locale)} className='flex'>
+              <Link href={getLocalizedUrl('/apps/integrations', locale)} className='flex'>
                 <i className='tabler-eye text-textSecondary' />
               </Link>
             </IconButton>

@@ -12,7 +12,7 @@ const useVerticalNav = () => {
     //TODO: set better error message
     throw new Error('VerticalNav Component is required!')
   }
-
+  console.log('vertical Comp', context)
   return context
 }
 
