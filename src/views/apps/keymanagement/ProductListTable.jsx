@@ -292,7 +292,7 @@ const ProductListTable = ({ productData }) => {
               variant='contained'
               component={Link}
               className='max-sm:is-full is-auto'
-              href={getLocalizedUrl('/apps/ecommerce/products/add', locale)}
+              href={getLocalizedUrl('/apps/keymanagement/addkey', locale)}
               startIcon={<i className='tabler-plus' />}
             >
               Add Key

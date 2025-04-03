@@ -91,7 +91,7 @@ const data = [
   {
     id: '13',
     name: 'eCommerce - Add New Product',
-    url: '/apps/ecommerce/products/add',
+    url: '/apps/keymanagement/addkey',
     icon: 'tabler-circle-plus',
     section: 'Apps'
   },

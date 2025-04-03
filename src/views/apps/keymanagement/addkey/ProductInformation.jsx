@@ -134,11 +134,11 @@ const ProductInformation = () => {
 
   return (
     <Card>
-      <CardHeader title='Product Information' />
+      <CardHeader title='Key Information' />
       <CardContent>
         <Grid container spacing={6} className='mbe-6'>
           <Grid size={{ xs: 12 }}>
-            <CustomTextField fullWidth label='Product Name' placeholder='iPhone 14' />
+            <CustomTextField fullWidth label='Key Name' placeholder='iPhone 14' />
           </Grid>
           <Grid size={{ xs: 12, sm: 6 }}>
             <CustomTextField fullWidth label='SKU' placeholder='FXSK123U' />

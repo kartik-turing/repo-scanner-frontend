@@ -95,7 +95,7 @@ const verticalMenuData = dictionary => [
               },
               {
                 label: dictionary['navigation'].add,
-                href: '/apps/ecommerce/products/add'
+                href: '/apps/keymanagement/addkey'
               },
               {
                 label: dictionary['navigation'].category,
