@@ -168,7 +168,7 @@ const data = [
   {
     id: '24',
     name: 'Academy - Course Details',
-    url: '/apps/academy/course-details',
+    url: '/apps/sdk/details',
     icon: 'tabler-list',
     section: 'Apps'
   },

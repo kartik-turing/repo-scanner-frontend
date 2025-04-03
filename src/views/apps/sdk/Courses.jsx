@@ -109,7 +109,7 @@ const Courses = props => {
                   <div className='pli-2 pbs-2'>
                     <Link
                       style={{ justifyContent: 'center', alignItems: 'center' }}
-                      href={getLocalizedUrl('/apps/academy/course-details', locale)}
+                      href={getLocalizedUrl('/apps/sdk/details', locale)}
                       className='flex'
                     >
                       <img style={{ width: '200px' }} src={item.tutorImg} alt={item.courseTitle} className='is-full' />
@@ -128,7 +128,7 @@ const Courses = props => {
                       <Typography
                         variant='h5'
                         component={Link}
-                        href={getLocalizedUrl('/apps/academy/course-details', locale)}
+                        href={getLocalizedUrl('/apps/sdk/details', locale)}
                         className='hover:text-primary'
                       >
                         {item.courseTitle}
@@ -171,7 +171,7 @@ const Courses = props => {
                         variant='tonal'
                         startIcon={<i className='tabler-rotate-clockwise-2' />}
                         component={Link}
-                        href={getLocalizedUrl('/apps/academy/course-details', locale)}
+                        href={getLocalizedUrl('/apps/sdk/details', locale)}
                       >
                         Start Over
                       </Button>
@@ -183,7 +183,7 @@ const Courses = props => {
                           color='secondary'
                           startIcon={<i className='tabler-rotate-clockwise-2' />}
                           component={Link}
-                          href={getLocalizedUrl('/apps/academy/course-details', locale)}
+                          href={getLocalizedUrl('/apps/sdk/details', locale)}
                           className='is-auto flex-auto'
                         >
                           Start Over
@@ -195,7 +195,7 @@ const Courses = props => {
                             <DirectionalIcon ltrIconClass='tabler-chevron-right' rtlIconClass='tabler-chevron-left' />
                           }
                           component={Link}
-                          href={getLocalizedUrl('/apps/academy/course-details', locale)}
+                          href={getLocalizedUrl('/apps/sdk/details', locale)}
                           className='is-auto flex-auto'
                         >
                           Continue

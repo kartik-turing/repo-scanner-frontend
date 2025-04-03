@@ -119,7 +119,7 @@ const CourseTable = ({ courseData }) => {
             <div className='flex flex-col'>
               <Typography
                 component={Link}
-                href={getLocalizedUrl('/apps/academy/course-details', locale)}
+                href={getLocalizedUrl('/apps/sdk/details', locale)}
                 className='font-medium hover:text-primary'
                 color='text.primary'
               >

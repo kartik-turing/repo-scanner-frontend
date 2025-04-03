@@ -119,7 +119,7 @@ const horizontalMenuData = dictionary => [
           },
           {
             label: dictionary['navigation'].courseDetails,
-            href: '/apps/academy/course-details'
+            href: '/apps/sdk/details'
           }
         ]
       },

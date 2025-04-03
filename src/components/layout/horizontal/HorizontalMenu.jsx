@@ -129,7 +129,7 @@ const HorizontalMenu = ({ dictionary }) => {
           <SubMenu label={dictionary['navigation'].academy} icon={<i className='tabler-school' />}>
             <MenuItem href={`/${locale}/apps/academy/dashboard`}>{dictionary['navigation'].dashboard}</MenuItem>
             <MenuItem href={`/${locale}/apps/sdk`}>{dictionary['navigation'].myCourses}</MenuItem>
-            <MenuItem href={`/${locale}/apps/academy/course-details`}>
+            <MenuItem href={`/${locale}/apps/sdk/details`}>
               {dictionary['navigation'].courseDetails}
             </MenuItem>
           </SubMenu>
