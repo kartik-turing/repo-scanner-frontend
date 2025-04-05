@@ -31,6 +31,7 @@ import LogisticsStatisticsCard from '@/views/apps/logistics/dashboard/LogisticsS
   return res.json()
 } */
 const AcademyDashboard = async () => {
+  console.log('i am here 1')
   // Vars
   const data = await getAcademyData()
   const statsData = await getStatisticsData()
