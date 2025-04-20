@@ -19,15 +19,16 @@ export const authOptions = {
 
         try {
           // ** Login API Call to match the user credentials and receive user data in response along with his role
-          console.log('url is', process.env.NEXT_PUBLIC_API_URL)
+          console.log('url in authorize', process.env.NEXT_PUBLIC_API_URL)
           const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/login`, {
             method: 'POST',
-            credentials: 'same-origin',
             headers: {
               'Content-Type': 'application/json'
             },
             body: JSON.stringify({ email, password })
           })
+          console.log('res is ', res)
+          console.log('res.status:', res.status)
 
           const data = await res.json()
           console.log('data is ', data)
