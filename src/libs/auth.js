@@ -3,6 +3,7 @@ import CredentialProvider from 'next-auth/providers/credentials'
 import GoogleProvider from 'next-auth/providers/google'
 import { PrismaAdapter } from '@auth/prisma-adapter'
 import { PrismaClient } from '@prisma/client'
+import axios from 'axios'
 
 const prisma = new PrismaClient()
 
@@ -19,29 +20,37 @@ export const authOptions = {
 
         try {
           // ** Login API Call to match the user credentials and receive user data in response along with his role
-          console.log('url is', process.env.NEXT_PUBLIC_API_URL)
-          const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/login`, {
-            method: 'POST',
-            credentials: 'same-origin',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ email, password })
+          console.log('url in authorize', process.env.NEXT_PUBLIC_API_URL)
+          // const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/login`, {
+          //   method: 'POST',
+          //   headers: {
+          //     'Content-Type': 'application/json'
+          //   },
+          //   body: JSON.stringify({ email, password })
+          // })
+          const res = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/login`, {
+            email,
+            password
           })
+          console.log('res is ', res.status)
+          console.log('res.data:', res.data)
 
-          const data = await res.json()
+          // const data = await res.json()
+          const data = res.data
+
           console.log('data is ', data)
 
-          if (res.status === 401) {
+          if (res?.status === 401) {
             throw new Error(JSON.stringify(data))
           }
 
-          if (res.status === 200) {
+          // if (res.status === 200) {
             return data
-          }
+          // }
 
-          return null
+          // return null
         } catch (e) {
+          console.log("Error==>", e);
           throw new Error(e.message)
         }
       }
