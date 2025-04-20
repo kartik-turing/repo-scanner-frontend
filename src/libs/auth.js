@@ -43,6 +43,7 @@ export const authOptions = {
 
           return null
         } catch (e) {
+          console.log("Error==>", e);
           throw new Error(e.message)
         }
       }
