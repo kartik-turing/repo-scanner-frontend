@@ -4,10 +4,13 @@ import { useEffect, useState } from 'react'
 import AiUniverseList from '@/views/apps/aiuniverse/AiUniverseList'
 import DevkitList from '@/views/apps/devkits/DevkitList'
 import PartnersList from '@/views/apps/partners/PartnersList'
-import UserList from '@/views/apps/user/list'
-import UserListTable from '@/views/apps/users/UserListTable'
+import CustomerList from '@/views/apps/customers/CustomerList'
+import RepositoryList from '@/views/apps/repositories/RepositoryList'
+import DbDumpsList from '@/views/apps/dbdumps/DbDumpsList'
+import DiscoveryCodeList from '@/views/apps/discoverycodes/DiscoveryCodeList'
+import DiscoveryDBList from '@/views/apps/discoverydatabase/DiscoveryDBList'
 
-const UserListTablePage = () => {
+const DiscoveryDBListTablePage = () => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -16,7 +19,7 @@ const UserListTablePage = () => {
       setLoading(true)
     }
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/users`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/discovery-list-database`, {
         headers: {
           Authorization: `Bearer ${process.env.NEXT_PUBLIC_BEARER_TOKEN}`,
           Accept: '*/*'
@@ -40,7 +43,7 @@ const UserListTablePage = () => {
   }, [])
 
   return (
-    <UserListTable
+    <DiscoveryDBList
       initialData={data}
       onDataUpdated={getEcommerceData} // pass to child
       loading={loading}
@@ -48,4 +51,4 @@ const UserListTablePage = () => {
   )
 }
 
-export default UserListTablePage
+export default DiscoveryDBListTablePage

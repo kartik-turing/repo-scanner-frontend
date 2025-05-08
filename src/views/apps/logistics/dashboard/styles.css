@@ -5,3 +5,10 @@
   padding-block: 4px;
   padding-inline: 16px;
 }
+
+.nodata-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}

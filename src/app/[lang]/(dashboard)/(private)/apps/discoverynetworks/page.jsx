@@ -1,13 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import AiUniverseList from '@/views/apps/aiuniverse/AiUniverseList'
-import DevkitList from '@/views/apps/devkits/DevkitList'
-import PartnersList from '@/views/apps/partners/PartnersList'
-import UserList from '@/views/apps/user/list'
-import UserListTable from '@/views/apps/users/UserListTable'
+import DiscoveryNetworkList from '@/views/apps/discoverynetworks/DiscoveryNetworkList'
 
-const UserListTablePage = () => {
+const DiscoveryNetworkListTablePage = () => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -16,7 +12,7 @@ const UserListTablePage = () => {
       setLoading(true)
     }
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/users`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/discovery-list-network`, {
         headers: {
           Authorization: `Bearer ${process.env.NEXT_PUBLIC_BEARER_TOKEN}`,
           Accept: '*/*'
@@ -40,7 +36,7 @@ const UserListTablePage = () => {
   }, [])
 
   return (
-    <UserListTable
+    <DiscoveryNetworkList
       initialData={data}
       onDataUpdated={getEcommerceData} // pass to child
       loading={loading}
@@ -48,4 +44,4 @@ const UserListTablePage = () => {
   )
 }
 
-export default UserListTablePage
+export default DiscoveryNetworkListTablePage
