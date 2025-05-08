@@ -1,8 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import AiUniverseList from '@/views/apps/aiuniverse/AiUniverseList'
-import DevkitList from '@/views/apps/devkits/DevkitList'
 import SubscriptionList from '@/views/apps/subscriptions/SubscriptionList'
 
 const SubscriptionListTablePage = () => {

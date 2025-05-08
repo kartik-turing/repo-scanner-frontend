@@ -1,10 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import AiUniverseList from '@/views/apps/aiuniverse/AiUniverseList'
-import DevkitList from '@/views/apps/devkits/DevkitList'
-import PartnersList from '@/views/apps/partners/PartnersList'
-import UserList from '@/views/apps/user/list'
 import UserListTable from '@/views/apps/users/UserListTable'
 
 const UserListTablePage = () => {
