@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import UserListTable from '@/views/apps/users/UserListTable'
+import DiscoveryCodeList from '@/views/apps/discoverycodes/DiscoveryCodeList'
 
-const UserListTablePage = () => {
+const DiscoveryCodeListTablePage = () => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -12,7 +12,7 @@ const UserListTablePage = () => {
       setLoading(true)
     }
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/users`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/discovery-list-code`, {
         headers: {
           Authorization: `Bearer ${process.env.NEXT_PUBLIC_BEARER_TOKEN}`,
           Accept: '*/*'
@@ -36,7 +36,7 @@ const UserListTablePage = () => {
   }, [])
 
   return (
-    <UserListTable
+    <DiscoveryCodeList
       initialData={data}
       onDataUpdated={getEcommerceData} // pass to child
       loading={loading}
@@ -44,4 +44,4 @@ const UserListTablePage = () => {
   )
 }
 
-export default UserListTablePage
+export default DiscoveryCodeListTablePage

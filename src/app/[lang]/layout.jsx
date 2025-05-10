@@ -25,8 +25,8 @@ import '@/app/globals.css'
 import '@assets/iconify-icons/generated-icons.css'
 
 export const metadata = {
-  title: 'Genie PQC',
-  description: 'Genie PQC - Description'
+  title: 'QuantumGenie',
+  description: 'QuantumGenie - Description'
 }
 
 const RootLayout = async props => {

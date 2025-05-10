@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import UserListTable from '@/views/apps/users/UserListTable'
+import PartnersList from '@/views/apps/partners/PartnersList'
 
-const UserListTablePage = () => {
+const PartnerListTablePage = () => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -12,7 +12,7 @@ const UserListTablePage = () => {
       setLoading(true)
     }
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/users`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}api/partners`, {
         headers: {
           Authorization: `Bearer ${process.env.NEXT_PUBLIC_BEARER_TOKEN}`,
           Accept: '*/*'
@@ -36,7 +36,7 @@ const UserListTablePage = () => {
   }, [])
 
   return (
-    <UserListTable
+    <PartnersList
       initialData={data}
       onDataUpdated={getEcommerceData} // pass to child
       loading={loading}
@@ -44,4 +44,4 @@ const UserListTablePage = () => {
   )
 }
 
-export default UserListTablePage
+export default PartnerListTablePage

@@ -56,10 +56,22 @@ const VerticalMenu = ({ dictionary, scrollMenu }) => {
         {/* <MenuItem href={`/${locale}/apps/keymanagement/addkey`}>{dictionary['navigation'].addkey}</MenuItem> */}
         <MenuItem href={`/${locale}/apps/vault`}>{dictionary['navigation'].qgVault}</MenuItem>
         <MenuItem href={`/${locale}/apps/cipherscan`}>{dictionary['navigation'].cipherscan}</MenuItem>
-        <MenuItem href={`/${locale}/apps/users`}>{dictionary['navigation'].qgusers}</MenuItem>
         <MenuItem href={`/${locale}/apps/integrations`}>{dictionary['navigation'].qgIntegrations}</MenuItem>
         <MenuItem href={`/${locale}/apps/permissions`}>{dictionary['navigation'].qgPermissions}</MenuItem>
         <MenuItem href={`/${locale}/apps/support`}>{dictionary['navigation'].qgSupport}</MenuItem>
+        <MenuItem href={`/${locale}/apps/users`}>{dictionary['navigation'].qgusers}</MenuItem>
+        <MenuItem href={`/${locale}/apps/devkit`}>{dictionary['navigation'].devkit}</MenuItem>
+        <MenuItem href={`/${locale}/apps/subscription`}>{dictionary['navigation'].subscription}</MenuItem>
+        <MenuItem href={`/${locale}/apps/partner`}>{dictionary['navigation'].partners}</MenuItem>
+        <MenuItem href={`/${locale}/apps/customer`}>{dictionary['navigation'].customer}</MenuItem>
+        <MenuItem href={`/${locale}/apps/repositories`}>{dictionary['navigation'].repositories}</MenuItem>
+        <MenuItem href={`/${locale}/apps/dbdumps`}>{dictionary['navigation'].dbdumps}</MenuItem>
+        <MenuItem href={`/${locale}/apps/networksettings`}>{dictionary['navigation'].networksettings}</MenuItem>
+        <MenuItem href={`/${locale}/apps/scanschedulers`}>{dictionary['navigation'].scanschedulers}</MenuItem>
+        <MenuItem href={`/${locale}/apps/scansessions`}>{dictionary['navigation'].scansessions}</MenuItem>
+        <MenuItem href={`/${locale}/apps/discoverycodes`}>{dictionary['navigation'].discoverycodes}</MenuItem>
+        <MenuItem href={`/${locale}/apps/discoverydatabase`}>{dictionary['navigation'].discoverydatabase}</MenuItem>
+        <MenuItem href={`/${locale}/apps/discoverynetworks`}>{dictionary['navigation'].discoverynetworks}</MenuItem>
       </Menu>
     </ScrollWrapper>
   )

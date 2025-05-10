@@ -110,6 +110,18 @@
     "qgVault": "QG Vault",
     "qgPermissions": "Permissions",
     "qgSupport": "Support",
-    "qgIntegrations": "Integrations"
+    "qgIntegrations": "Integrations",
+    "devkit": "Dev kits",
+    "subscription": "Subscriptions",
+    "partners": "Partners",
+    "customer": "Customers",
+    "repositories": "Repositories",
+    "dbdumps": "DB Dumps",
+    "networksettings": "Network Scan Settings",
+    "scanschedulers": "Scan Schedulers",
+    "scansessions": "Scan Sessions",
+    "discoverycodes": "Discovery Codes",
+    "discoverydatabase": "Discovery Database",
+    "discoverynetworks": "Discovery Networks"
   }
 }
